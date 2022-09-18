@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "6353791855",
+    "project_id": "collegemanagementapp-da67d",
+    "storage_bucket": "collegemanagementapp-da67d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6353791855:android:9f98e17b20500268ae569a",
+        "android_client_info": {
+          "package_name": "com.college.collegemanagementapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "6353791855-h1ua7mndcjq85kvtkjtr1hqrid4vgcm2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdh59gagiHyobHpluCe4EKa12YQaVTVqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "6353791855-h1ua7mndcjq85kvtkjtr1hqrid4vgcm2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
