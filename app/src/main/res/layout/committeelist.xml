@@ -10,6 +10,10 @@
     android:orientation="horizontal"
     android:layout_margin="10dp">
 
+        <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/grp_img"
@@ -19,9 +23,15 @@
             android:layout_gravity="center_horizontal"
             android:src="@drawable/demo_profile_icon"/>
 
+        <TextView
+            android:id="@+id/grp_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Committee_Name"
+            android:textSize="20dp"
+            android:gravity="center"/>
 
-
-
+</LinearLayout>
 
 
 

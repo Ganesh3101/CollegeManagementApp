@@ -29,6 +29,7 @@ class CommitteeAdapter(private val grouplist: ArrayList<CommitteeData>) : Recycl
         val groupdata  = grouplist[position]
 
         holder.group_img.setImageResource(groupdata.committee_img)
+        holder.group_name.text = groupdata.committee_name
 
         holder.itemView.setOnClickListener{
 
@@ -50,6 +51,7 @@ class CommitteeAdapter(private val grouplist: ArrayList<CommitteeData>) : Recycl
     {
 
         val group_img  = itemView.findViewById(R.id.grp_img) as ImageView
+        val group_name  = itemView.findViewById(R.id.grp_name) as TextView
 
 
     }
