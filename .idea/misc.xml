@@ -3,8 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/layout/activity_detail_notification.xml" value="0.22" />
+        <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/layout/activity_grp_notification_list.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/layout/activity_login_page.xml" value="0.12395833333333334" />
-        <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/layout/activity_profile_page.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/layout/activity_main.xml" value="0.3008849557522124" />
+        <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/layout/activity_profile_page.xml" value="0.22" />
+        <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/layout/activity_user_input.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/layout/add_new_notification.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/layout/committee_recyclerview.xml" value="0.1" />
+        <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/layout/committeelist.xml" value="0.12395833333333334" />
+        <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/layout/fragment_Proctor.xml" value="0.12395833333333334" />
+        <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/layout/fragment_committee.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/layout/fragment_groupfragment.xml" value="0.10677083333333333" />
+        <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/layout/fragment_home.xml" value="0.12395833333333334" />
+        <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/layout/fragment_notification.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/layout/fragment_proctor.xml" value="0.22" />
+        <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/layout/grp_notification_list.xml" value="0.22" />
+        <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/layout/notification.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/layout/notification_recyclerview_list.xml" value="0.22" />
+        <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/layout/prn_ip.xml" value="0.22" />
+        <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/layout/proctor_recyclerview.xml" value="0.12395833333333334" />
+        <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/layout/proctorsetlist.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/gbmyo/AndroidStudioProjects/CollegeManagementApp/app/src/main/res/menu/bottom_nav.xml" value="0.22" />
       </map>
     </option>
   </component>

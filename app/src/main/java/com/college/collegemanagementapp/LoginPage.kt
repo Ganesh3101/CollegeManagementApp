@@ -3,9 +3,9 @@ package com.college.collegemanagementapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.ImageView
 import android.widget.Toast
+import com.college.collegemanagementapp.DataClasses.GoogleData
+import com.college.collegemanagementapp.DataClasses.ProctorsetData
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -52,6 +52,7 @@ class LoginPage : AppCompatActivity() {
     private fun signIn() {
         val signInIntent: Intent = mGoogleSignInClient.signInIntent
         startActivityForResult(signInIntent, Req_Code)
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -97,16 +98,43 @@ class LoginPage : AppCompatActivity() {
 
                 var googleProfilePicURL = account?.photoUrl.toString()
 
+                var prn_number = "null"
+
+                var googleAdmin : String
+
+                if(googleEmail == "jay.nk@somaiya.edu"){
+                    googleAdmin = "Admin"
+                }
+                else{
+                    googleAdmin = null.toString()
+                }
+
                 val ref  = FirebaseDatabase.getInstance().getReference("Users").child("Google")
+                val proc_ref  = FirebaseDatabase.getInstance().getReference("Proctor_list").child(googleFirstName)
 
                 val currentUser : String? = Firebase.auth.currentUser?.uid
 
-                val Google_Upload= GoogleData(googleFirstName, googleLastName, googleEmail, googleProfilePicURL)
+                val Google_Upload= GoogleData(googleFirstName, googleLastName, googleEmail, googleProfilePicURL,prn_number,0)
+
+                val Google_Upload_Proc= ProctorsetData(googleFirstName, googleLastName,  googleProfilePicURL,googleAdmin)
 
                 try {
                     ref.child(currentUser.toString()).setValue(Google_Upload).addOnCompleteListener {
 
                         Toast.makeText(this, "data saved successfully", Toast.LENGTH_LONG).show()
+
+                    }
+                }
+                catch (e: Exception)
+                {
+                    Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
+
+                }
+
+                try {
+                    proc_ref.setValue(Google_Upload_Proc).addOnCompleteListener {
+
+                       // Toast.makeText(this, "data saved successfully", Toast.LENGTH_LONG).show()
 
                     }
                 }
@@ -143,7 +171,12 @@ class LoginPage : AppCompatActivity() {
 
                 val intent = Intent(this, ProfilePage::class.java)
                 startActivity(intent)
+
+               
+
             }
         }
     }
+
+
 }

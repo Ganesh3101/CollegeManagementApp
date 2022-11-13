@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "6353791855",
+    "firebase_url": "https://collegemanagementapp-da67d-default-rtdb.firebaseio.com",
     "project_id": "collegemanagementapp-da67d",
     "storage_bucket": "collegemanagementapp-da67d.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "6353791855-7krp1g5rfroje7s7f1jk58m45glti9cg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.college.collegemanagementapp",
+            "certificate_hash": "3c28eaf86cc2c952937955091e629667261c0ecc"
+          }
+        },
         {
           "client_id": "6353791855-h1ua7mndcjq85kvtkjtr1hqrid4vgcm2.apps.googleusercontent.com",
           "client_type": 3

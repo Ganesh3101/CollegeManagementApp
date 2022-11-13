@@ -15,8 +15,10 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.ktx.Firebase
 import com.squareup.picasso.Picasso
+import kotlin.random.Random
 
 class ProfilePage : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile_page)
@@ -42,31 +44,35 @@ class ProfilePage : AppCompatActivity() {
                 val g_ref = FirebaseDatabase.getInstance().getReference("Users").child("Google").child(currentUser.toString())
 
                 g_ref.addValueEventListener(object : ValueEventListener {
-                    override fun onDataChange(snapshot: DataSnapshot) {
-                        if (snapshot.exists()) {
-                            var g_name = snapshot.child("g_name").getValue()
-                            var g_email = snapshot.child("g_email").getValue()
-                            var g_surname = snapshot.child("g_surname").getValue()
-                            var g_prof_img = snapshot.child("g_pic").getValue().toString()
+                        override fun onDataChange(snapshot: DataSnapshot) {
+                            if (snapshot.exists()) {
+                                var g_name = snapshot.child("g_name").getValue()
+                                var g_email = snapshot.child("g_email").getValue()
+                                var g_surname = snapshot.child("g_surname").getValue()
+                                var g_prof_img = snapshot.child("g_pic").getValue().toString()
 
 
-                            Picasso.with(this@ProfilePage).load(g_prof_img).into(prof_img)
-                            textViewname.text = "$g_name" + " " +  "$g_surname"
-                            textViewemail.text = g_email.toString()
+                                Picasso.with(this@ProfilePage).load(g_prof_img).into(prof_img)
+                                textViewname.text = "$g_name" + " " +  "$g_surname"
+                                textViewemail.text = g_email.toString()
+                            }
                         }
-                    }
 
-                    override fun onCancelled(error: DatabaseError) {
-                        TODO("Not yet implemented")
-                    }
-                })
+                        override fun onCancelled(error: DatabaseError) {
+                            TODO("Not yet implemented")
+                        }
+                    })
+
+
+
+
             }
         }
 
     }
     private fun logout(){
-        Firebase.auth.signOut()
-        val intent = Intent(this, LoginPage::class.java)
+//        Firebase.auth.signOut()
+        val intent = Intent(this, UserInput::class.java)
         startActivity(intent)
     }
 }
